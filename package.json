@@ -1,0 +1,21 @@
+{
+  "name": "thorshammer",
+  "version": "0.0.1",
+  "description": "A Simple Global Anti-Spam Bot For Telegram",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamikazechaser/ThorsHammer"
+  },
+  "author": "Mohammed Sohail <sohailsameja@gmail.com>",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "moment": "^2.17.1",
+    "mongoose": "^4.7.8",
+    "node-telegram-bot-api": "^0.26.0",
+    "rangi": "^1.0.1"
+  }
+}
