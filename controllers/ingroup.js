@@ -12,7 +12,7 @@ bot.onText(/^[\/!#]kick$/, msg => {
     });
 });
 
-bot.onText(/^[\/!#]ban$/, function (msg) {
+bot.onText(/^[\/!#]ban$/, msg => {
     bot.getChatAdministrators(msg.chat.id).then(admins => admins.some(child => child.user.id == msg.from.id)).then(isAdmin => {
         if (isAdmin) {
             bot.kickChatMember(msg.chat.id, msg.reply_to_message.from.id);
