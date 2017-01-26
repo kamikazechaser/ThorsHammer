@@ -14,7 +14,7 @@ bot.on('new_chat_participant', msg => {
 
 bot.on('new_chat_participant', msg => {
     bot.getMe().then(me => {
-        if (newUser == me.username) {
+        if (msg.new_chat_participant.username == me.username) {
             bot.sendMessage(msg.chat.id, `Hello There! I Am A Group Administartion Bot, Hit The Button Below To Learn More About Me`, {reply_markup: {inline_keyboard: [[{ text: 'Start Me', url: 'http://t.me/ThorsHammerBot'}]]}});
         }
     });
