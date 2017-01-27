@@ -1,3 +1,5 @@
+'use strict';
+
 const Tg = require('node-telegram-bot-api');
 const config = require('./config');
 const moment = require('moment');

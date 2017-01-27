@@ -1,3 +1,5 @@
+'use strict';
+
 const moment = require('moment');
 const bot = require('../core/telegram');
 const config = require('../core/config');

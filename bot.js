@@ -1,3 +1,5 @@
+'use strict';
+
 // Ensure That The Important Modules Are Present
 require('./controllers/admin');
 require('./controllers/banhammer');

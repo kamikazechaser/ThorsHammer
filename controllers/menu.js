@@ -1,3 +1,5 @@
+'use strict';
+
 const bot = require('../core/telegram');
 
 bot.onText(/^[\/!#]start$/, msg => {

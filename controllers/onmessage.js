@@ -1,3 +1,5 @@
+'use strict';
+
 const bot = require('../core/telegram');
 const Ban = require('../models/banmodel');
 

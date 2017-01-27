@@ -1,3 +1,5 @@
+'use strict';
+
 const mongoose = require('mongoose');
 const rangi = require('rangi');
 const config = require('./config');
