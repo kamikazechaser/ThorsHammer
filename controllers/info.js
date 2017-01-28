@@ -11,7 +11,7 @@ bot.onText(/^[\/!#]banlist$/, msg => {
     Mod.count({
         userid: msg.from.id
     }, (err, count) => {
-        if (count > 0) {
+        if (count > 0 || config.SUDO == msg.from.id) {
             let query = Ban.find({}).select({
                 'userid': 1,
                 'name': 1,
