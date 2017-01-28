@@ -51,7 +51,7 @@ Action| Description | Status
 
 You need Node.js version > 4, inorder to download dependencies and run this bot.
 For Windows users, simple click [here](https://nodejs.org/dist/v7.4.0/node-v7.4.0-x64.msi) to install it.
-For Unix users, use the preffered method [here](https://nodejs.org/en/download/)
+For Unix users, use the preffered method [here](https://nodejs.org/en/download/).
 
 ### Telegram
 
