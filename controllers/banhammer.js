@@ -2,6 +2,7 @@
 
 const moment = require('moment');
 const bot = require('../core/telegram');
+const tgresolve = require("tg-resolve");
 const config = require('../core/config');
 const Ban = require('../models/banmodel');
 const Mod = require('../models/modsmodel');
@@ -70,7 +71,7 @@ bot.onText(/[\/!#]hammer (\d+) (.+)/, (msg, match) => {
             bot.sendMessage(msg.chat.id, `*${msg.from.first_name}*, You Are Not A Global Admin!`, {parse_mode: 'Markdown'});
         }
     });
-})
+});
 
 bot.onText(/[\/!#]unhammer (\d+) (.+)/, (msg, match) => {
     Mod.count({
@@ -86,6 +87,54 @@ bot.onText(/[\/!#]unhammer (\d+) (.+)/, (msg, match) => {
             });
             bot.sendMessage(msg.chat.id, `*${match[2]}*, Globally Unbanned!`, {parse_mode: 'Markdown'});
             bot.sendMessage(config.LOG_CHANNEL, `*${match[2]}* _(${match[1]})_, Globally Unbanned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
+        } else {
+            bot.sendMessage(msg.chat.id, `*${msg.from.first_name}*, You Are Not A Global Admin!`, {parse_mode: 'Markdown'});
+        }
+    });
+});
+
+bot.onText(/[\/!#]hammer (@\w+) (.+)/, (msg, match) => {
+    Mod.count({
+        userid: msg.from.id
+    }, (err, count) => {
+        if (count > 0 || config.SUDO == msg.from.id) {
+            tgresolve(config.BOT_TOKEN, match[1], (error, result) => {
+            let newBan = new Ban({
+                userid: result.id,
+                name: result.first_name,
+            });
+                console.log(result)
+            newBan.save(err => {
+                if (err && err.code === 11000) {
+                    bot.sendMessage(msg.chat.id, `*${result.first_name}*, Is Already Globally Banned!`, {parse_mode: 'Markdown'});
+                } else {
+                    bot.sendMessage(msg.chat.id, `*${result.first_name}*, Globally Banned!`, {parse_mode: 'Markdown'});
+                    bot.sendMessage(config.LOG_CHANNEL, `*${result.first_name}* _(${result.id})_, Globally Banned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
+                }
+            });
+        });
+        } else {
+            bot.sendMessage(msg.chat.id, `*${msg.from.first_name}*, You Are Not A Global Admin!`, {parse_mode: 'Markdown'});
+        }
+    });
+});
+
+bot.onText(/[\/!#]unhammer (@\w+) (.+)/, (msg, match) => {
+    Mod.count({
+        userid: msg.from.id
+    }, (err, count) => {
+        if (count > 0 || config.SUDO == msg.from.id) {
+            tgresolve(config.BOT_TOKEN, match[1], (error, result) => {
+            Ban.remove({
+                userid: result.id
+            }, (err, cb) => {
+                if (cb.result.n == 0) {
+                    console.log('User Not Found!')
+                }
+            });
+            bot.sendMessage(msg.chat.id, `*${result.first_name}*, Globally Unbanned!`, {parse_mode: 'Markdown'});
+            bot.sendMessage(config.LOG_CHANNEL, `*${result.first_name}* _(${result.id})_, Globally Unbanned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
+        });
         } else {
             bot.sendMessage(msg.chat.id, `*${msg.from.first_name}*, You Are Not A Global Admin!`, {parse_mode: 'Markdown'});
         }

@@ -17,6 +17,7 @@
     "mongoose": "^4.7.8",
     "node-cron": "^1.1.2",
     "node-telegram-bot-api": "^0.26.0",
-    "rangi": "^1.0.1"
+    "rangi": "^1.0.1",
+    "tg-resolve": "^1.3.1"
   }
 }
