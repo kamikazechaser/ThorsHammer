@@ -9,7 +9,7 @@
   "keywords": [
     "telegram",
     "banhammer"
-  ],    
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kamikazechaser/ThorsHammer"
@@ -19,6 +19,7 @@
   "dependencies": {
     "moment": "^2.17.1",
     "mongoose": "^4.7.8",
+    "ngrok": "^2.2.6",
     "node-cron": "^1.1.2",
     "node-telegram-bot-api": "^0.26.0",
     "rangi": "^1.0.1",
