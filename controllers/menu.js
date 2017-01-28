@@ -81,6 +81,9 @@ bot.on('callback_query', msg => {
     }
     if (lang == `es`) {
         lang = locale.it
+    }
+    if (lang == `ar`) {
+        lang = locale.ar
     }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `help_${langCode}`) {
@@ -137,6 +140,9 @@ bot.on('callback_query', msg => {
     if (lang == `es`) {
         lang = locale.it
     }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `banhammer_help_${langCode}`) {
         bot.editMessageText(`${lang.banhammerinfo}`, {
@@ -187,6 +193,9 @@ bot.on('callback_query', msg => {
     if (lang == `es`) {
         lang = locale.it
     }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `globaladmin_help_${langCode}`) {
         bot.editMessageText(`${lang.globaladmininfo}`, {
@@ -224,6 +233,9 @@ bot.on('callback_query', msg => {
     if (lang == `es`) {
         lang = locale.it
     }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `ingroup_help_${langCode}`) {
         bot.editMessageText(`${lang.ingroupinfo}`, {
@@ -274,6 +286,9 @@ bot.on('callback_query', msg => {
     if (lang == `es`) {
         lang = locale.it
     }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `about_help_${langCode}`) {
         bot.editMessageText(`${lang.aboutinfo}`, {
@@ -311,6 +326,9 @@ bot.on('callback_query', msg => {
     if (lang == `es`) {
         lang = locale.it
     }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `banhammer_help_${langCode}`) {
         bot.editMessageText(`${lang.banhammerinfo}`, {
@@ -362,6 +380,9 @@ bot.on('callback_query', msg => {
     if (lang == `es`) {
         lang = locale.it
     }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `recycle_help_${langCode}`) {
         bot.editMessageText(`*Help Menu*`, {
@@ -416,7 +437,10 @@ bot.on('inline_query', function(msg) {
     }
     if (lang == `es`) {
         lang = locale.it
-    }    
+    }
+    if (lang == `ar`) {
+        lang = locale.ar
+    }     
     let opts = [];
     if (msg.query == `help ${langCode}`) {
         opts = [
