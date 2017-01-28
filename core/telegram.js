@@ -5,9 +5,16 @@ const config = require('./config');
 const moment = require('moment');
 const rangi = require('rangi');
 
+let url = process.env.NOW_URL
+
 const bot = new Tg(config.BOT_TOKEN, {
-    polling: true
+    webHook: {
+        port: 8000,
+        host: '0.0.0.0'
+    }
 });
+
+bot.setWebHook(`${url}/bot${config.BOT_TOKEN}`);
 
 bot.getMe().then(me => {
     console.log(rangi.cyan(`Bot Is Running => ${me.username}`));
