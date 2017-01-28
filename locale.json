@@ -1,7 +1,7 @@
 {
     "en": {
         "start": "*Introduction\n\n*This is a simple moderation bot that complements _Group Butler_. Anyone else can use this bot in their groups to perform simple tasks like:\n1️⃣️ Kick and Ban\n*and most importantly*,\n2️⃣️ Prevent the most notorious of spammers, who have been globally banned, from entering his/her group!\n\nTo get started, add this bot to your group(s) as an administrator.\n\nFor more information, use the /help command.",
-        "help": "*Help Menu*",
+        "help": "*Help Menu*\n\n💡 Pro Tip: Use Inline Mode!\n\nSimply Type `@thorshammerbot` And Add A Space In Any Chat!",
         "banhammer_help": "Banhammer",
         "superuser_help": "Superuser",
         "globaladmin_help": "Global Admin",
