@@ -1,11 +1,15 @@
 {
   "name": "thorshammer",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "A Simple Global Anti-Spam Bot For Telegram",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
+  "keywords": [
+    "telegram",
+    "banhammer"
+  ],    
   "repository": {
     "type": "git",
     "url": "https://github.com/kamikazechaser/ThorsHammer"
