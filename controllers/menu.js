@@ -1,7 +1,6 @@
 'use strict';
 
 const bot = require('../core/telegram');
-const emoji = require('node-emoji')
 const locale = require('../core/locale.json');
 
 const startKeyboard = [[{
