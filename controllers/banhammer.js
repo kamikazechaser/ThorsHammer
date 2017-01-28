@@ -15,7 +15,7 @@ bot.onText(/^[\/!#]hammer$/, msg => {
             bot.kickChatMember(msg.chat.id, msg.reply_to_message.from.id);
             let newBan = new Ban({
                 userid: msg.reply_to_message.from.id,
-                name: msg.reply_to_message.from.first_name,
+                name: msg.reply_to_message.from.first_name
             });
             newBan.save(err => {
                 if (err && err.code === 11000) {
@@ -50,21 +50,20 @@ bot.onText(/^[\/!#]unhammer$/, msg => {
     });
 });
 
-bot.onText(/[\/!#]hammer (\d+) (.+)/, (msg, match) => {
+bot.onText(/[\/!#]hammer (\d+)/, (msg, match) => {
     Mod.count({
         userid: msg.from.id
     }, (err, count) => {
         if (count > 0 || config.SUDO == msg.from.id) {
             let newBan = new Ban({
-                userid: match[1],
-                name: match[2],
+                userid: match[1]
             });
             newBan.save(err => {
                 if (err && err.code === 11000) {
-                    bot.sendMessage(msg.chat.id, `*${match[2]}*, Is Already Globally Banned!`, {parse_mode: 'Markdown'});
+                    bot.sendMessage(msg.chat.id, `*${match[1]}*, Is Already Globally Banned!`, {parse_mode: 'Markdown'});
                 } else {
-                    bot.sendMessage(msg.chat.id, `*${match[2]}*, Globally Banned!`, {parse_mode: 'Markdown'});
-                    bot.sendMessage(config.LOG_CHANNEL, `*${match[2]}* _(${match[1]})_, Globally Banned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
+                    bot.sendMessage(msg.chat.id, `*${match[1]}*, Globally Banned!`, {parse_mode: 'Markdown'});
+                    bot.sendMessage(config.LOG_CHANNEL, `_(${match[1]})_, Globally Banned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
                 }
             });
         } else {
@@ -73,7 +72,7 @@ bot.onText(/[\/!#]hammer (\d+) (.+)/, (msg, match) => {
     });
 });
 
-bot.onText(/[\/!#]unhammer (\d+) (.+)/, (msg, match) => {
+bot.onText(/[\/!#]unhammer (\d+)/, (msg, match) => {
     Mod.count({
         userid: msg.from.id
     }, (err, count) => {
@@ -85,15 +84,15 @@ bot.onText(/[\/!#]unhammer (\d+) (.+)/, (msg, match) => {
                     console.log('User Not Found!')
                 }
             });
-            bot.sendMessage(msg.chat.id, `*${match[2]}*, Globally Unbanned!`, {parse_mode: 'Markdown'});
-            bot.sendMessage(config.LOG_CHANNEL, `*${match[2]}* _(${match[1]})_, Globally Unbanned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
+            bot.sendMessage(msg.chat.id, `*${match[1]}*, Globally Unbanned!`, {parse_mode: 'Markdown'});
+            bot.sendMessage(config.LOG_CHANNEL, `_(${match[1]})_, Globally Unbanned!\nBy: _${msg.from.first_name}_\n${moment().format('MMMM Do YYYY, h:mm:ss a')}`, {parse_mode: 'Markdown'});
         } else {
             bot.sendMessage(msg.chat.id, `*${msg.from.first_name}*, You Are Not A Global Admin!`, {parse_mode: 'Markdown'});
         }
     });
 });
 
-bot.onText(/[\/!#]hammer (@\w+) (.+)/, (msg, match) => {
+bot.onText(/[\/!#]hammer (@\w+)/, (msg, match) => {
     Mod.count({
         userid: msg.from.id
     }, (err, count) => {
@@ -101,7 +100,6 @@ bot.onText(/[\/!#]hammer (@\w+) (.+)/, (msg, match) => {
             tgresolve(config.BOT_TOKEN, match[1], (error, result) => {
             let newBan = new Ban({
                 userid: result.id,
-                name: result.first_name,
             });
                 console.log(result)
             newBan.save(err => {
@@ -119,7 +117,7 @@ bot.onText(/[\/!#]hammer (@\w+) (.+)/, (msg, match) => {
     });
 });
 
-bot.onText(/[\/!#]unhammer (@\w+) (.+)/, (msg, match) => {
+bot.onText(/[\/!#]unhammer (@\w+)/, (msg, match) => {
     Mod.count({
         userid: msg.from.id
     }, (err, count) => {
