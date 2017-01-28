@@ -21,7 +21,7 @@ Command | Description | Status | Superuser | Global Admin | Group Admin | Normal
 /leave | Bot leaves chat | ✅ | ✅ | ❌ | ❌ | ❌
 /promote | `[by reply/username/id]`  Promotes a user to a global admin | ✅ | ✅ | ❌ | ❌ | ❌
 /demote | `[by reply/username/id]`  Demotes a user from a global admin | ✅ | ✅ | ❌ | ❌ | ❌
-/banlist | Returns a txt file to the log channel of globally hammered users | ✅ | ✅ | ✅ | ❌ | ❌
+/banlist | Sends a txt file to the log channel, of globally banned users | ✅ | ✅ | ✅ | ❌ | ❌
 /admins | Returns a list of group admins | ✅ | ✅ | ✅ | ✅ | ✅
 /globaladmins | Returns a list of global admins admins | ✅ | ✅ | ✅ | ✅ | ✅
 /kick | Kicks a user from the group (can join back) | ✅ | ❌ | ❌ | ✅ | ❌
@@ -51,18 +51,18 @@ Action| Description | Status
 
 You need Node.js version > 4, inorder to download dependencies and run this bot.
 For Windows users, simple click [here](https://nodejs.org/dist/v7.4.0/node-v7.4.0-x64.msi) to install it.
-For Unix users, user the preffered method [here](https://nodejs.org/en/download/)
+For Unix users, use the preffered method [here](https://nodejs.org/en/download/)
 
 ### Telegram
 
 <img src="http://i.imgur.com/84FFJo2.png" height="120">
 
 - Create a bot, read on how to do that [here](https://core.telegram.org/bots/faq#how-do-i-create-a-bot)
-- Disable bot privacy, send `/setprivacy` to [@BotFather](https://telegram.me/BotFather). read more about privacy [here](https://core.telegram.org/bots/faq#what-messages-will-my-bot-get)
-- Enable inline mode, send `/setinline` to [@BotFather](https://telegram.me/BotFather). read more about inline [here](https://core.telegram.org/bots/inline)
+- Disable bot privacy, send `/setprivacy` to [@BotFather](https://telegram.me/BotFather). Read more about privacy [here](https://core.telegram.org/bots/faq#what-messages-will-my-bot-get)
+- Enable inline mode, send `/setinline` to [@BotFather](https://telegram.me/BotFather). Read more about inline [here](https://core.telegram.org/bots/inline)
 - Create a log channel, and get its id by simply forwarding a message from the channel to [@getidsbot](https://telegram.me/getidsbot). The id always starts with '-100'. 
 - Using the same bot above, get your own id.
-- Open core/config.js and input the token and id's in their respective fields.
+- Open `core/config.js` and input the token and id's in their respective fields.
 
 ### MongoDB
 
