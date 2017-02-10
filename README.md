@@ -66,7 +66,7 @@ For Unix users, use the preffered method [here](https://nodejs.org/en/download/)
 
 ### MongoDB
 
-You need MongoDB to run this bot, You can get a free deployment from [mongolab](https://mlab.com). Follow the instructions below:
+You need MongoDB to run this bot, You can get a free deployment from [mongolab](https://mlab.com). Follow the instructions below (skip if deploying to Openshift):
 
 <img src="http://i.imgur.com/2h426nA.png" width="200">
 
@@ -150,6 +150,33 @@ $ npm install -g forever
 
 # # Ensure all fields in core/config.js are present! 
 $ forever start bot.js
+```
+
+### Openshift
+
+<img src="http://www.opencloudconf.com/images/openshift_logo.png" width="200">
+
+```bash
+# Ensure You Have Node.JS Installed! 
+$ node -v
+
+# Clone The Repo
+$ git clone https://github.com/kamikazechaser/ThorsHammer.git -b openshift
+$ cd ThorsHammer
+# Ensure all fields in core/config.js are present! Except the MONGODB_URL, leave it as is!
+
+# Log into your Openshift web console
+# Create a new app
+# Select Node.js [Latest]
+# Launch the app
+# Add a cartridge > Install your own cartridge
+# Enter this => https://raw.githubusercontent.com/icflorescu/openshift-cartridge-mongodb/master/metadata/manifest.yml
+# Add your ssh keys to Openshift and ensure they are available in $HOME/.ssh locally
+# Copy your git address from the side, on the web console
+
+$ git remote add openshift [REMOTE GIT ADDRESS, COPIED FROM ABOVE]
+$ git push openshift master --force
+
 ```
 
 *Other Strategies*
