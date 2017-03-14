@@ -12,7 +12,7 @@
         "globaladmininfo":  "*Global Admins Commands*\n\nYou can use either `/, !, or #` as command prefixes\n\nGlobal admins can fully utilize the banhammer, a global admin can only be promoted by the superuser.\n\n• `/banlist`: sends the latest banlist to the log channel.",
         "ingroupinfo": "*In-group Commands*\n\nYou can use either `/, !, or #` as command prefixes\n\n• `/kick [by reply]`: kick a user from the group.\n• `/ban [by reply]`: ban a user from the group.\n• `/admins`: lists the administrators of the group.\n• `/globaladmins`: lists global admins who have the power to use the banhammer.",
         "aboutinfo": "*Information*\n\n_Released Under:_ AGPL-v3.0\n_Written By:_ @kamikazechaser\n_Source Code:_ [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer)",
-        "creditsinfo": "*Translators*\n\n🇪🇸 - {Insert Name Here}\n🇧🇷 - {Insert Name Here}\n🇮🇷 - {Insert Name Here}\n🇸🇦 - {Insert Name Here}\n🇮🇹 - {Insert Name Here}"
+        "creditsinfo": "*Translators*\n\n🇪🇸 - {Insert Name Here}\n🇧🇷 - {Insert Name Here}\n🇮🇷 - {Insert Name Here}\n🇸🇦 - @rix4r [claydev]\n🇮🇹 - {Insert Name Here}"
     },
     "es": {
         "start": "Coming Soon!",
@@ -60,19 +60,19 @@
         "creditsinfo": "Coming Soon!"
     },
     "ar": {
-        "start": "Coming Soon!",
-        "banhammer_help": "Coming Soon!",
-        "superuser_help": "Coming Soon!",
-        "globaladmin_help": "Coming Soon!",
-        "ingroup_help": "Coming Soon!",
-        "about_help": "Coming Soon!",
-        "credits_help": "Coming Soon!",
-        "banhammerinfo": "Coming Soon!",
-        "superuserinfo": "Coming Soon!",
-        "globaladmininfo":  "Coming Soon!",
-        "ingroupinfo": "Coming Soon!",
-        "aboutinfo": "Coming Soon!",
-        "creditsinfo": "Coming Soon!"
+        "start": "المقدمة\n\nهذا البوت لادارة المجموعات تستطيع اضافته لمجموعتك والقيام ببعض المهام مثل :\n1️⃣️ طرد و حظر \n2️⃣️ منع المحظورين حظر عام من دخول المجموعة والقيام بالتخريب\nاولا قم بإضافة البوت مشرف في مجموعتك \nللمزيد من التلعيمات ارسل الامر /help\nقائمة التعليمات \n💡 يمكنك استخدام وضع الانلاين\nمثال `@thorshammerbot` قم بنسخه و استخدام الاوامر",
+        "banhammer_help": "الطرد والحماية",
+        "superuser_help": "المشرفين",
+        "globaladmin_help": "المسؤلين",
+        "ingroup_help": "داخل المجموعة",
+        "about_help": "معلومات",
+        "credits_help": "الاعتمادات",
+        "banhammerinfo": "اوامر الطرد والحماية\nيمكنك استخدام / , # , ! في الاوامر \n\n• /hammer [بالرد|الايدي|المعرف] : لحظر العضو من جميع المجموعات\n• /unhammer [بالرد|الايدي|المعرف] : ازالة الحظر العام من جميع المجموعات",
+        "superuserinfo": "اوامر المشرفين\nيمكنك استخدام / , # , ! في الاوامر\n\n• /promote [بالرد|الايدي|المعرف] : لترقية مشرف في المجموعة \n• /demote [بالرد|الايدي|المعرف] : لازالة مشرف من المجموعة",
+        "globaladmininfo":  "مشرفين البوت\nيمكنك استخدام / , # , ! في الاوامر\n\nهذا الامر للمشرفين\n• /banlist: لعرض قائمة المحظورين",
+        "ingroupinfo": "اوامر داخل المجموعة\nيمكنك استخدام / , # , ! في الاوامر\n\n• /kick [بالرد] : طرد عضو من المجموعة\n• /ban [بالرد] : حظر عضو من المجموعة\n• /admins : عرض مشرفين المجموعة \n• /globaladmins: المسؤلين عن ادارة البوت والجموعة",
+        "aboutinfo": "معلومات\n\nاصدار : AGPL-V3.0\n تم كتابتها من قبل : @kamikazechaser \nالسورس : [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer)",
+        "creditsinfo": "الترجمة\n\n🇪🇸 - الاسبانية\n🇧🇷 -البرازيلية\n🇮🇷 -الهندية\n🇸🇦 - @rix4r [claydev]\n🇮🇹 -الايطالية"
     },
     "it": {
         "start": "Coming Soon!",

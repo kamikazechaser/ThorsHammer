@@ -195,7 +195,7 @@ Translations are welcome. Languages given priority are:
 - 🇪🇸 Español
 - 🇧🇷 Português
 - 🇮🇷 Farsi
-- 🇸🇦 Arabic
+- 🇸🇦 Arabic - Translated by [@rix4r](https://github.com/claydev) - [full arabic fork](https://github.com/claydev/ThorsHammer)
 - 🇮🇹 Italiano
 
 Edit the respective fields in `core/locale.json` and submit a pull request. be careful of Markdown elements and `\n`, they are important!
@@ -203,4 +203,3 @@ Edit the respective fields in `core/locale.json` and submit a pull request. be c
 ## License
 
 Released under AGPL-v3.0, see the [LICENSE](https://github.com/kamikazechaser/ThorsHammer/blob/master/LICENSE) file.
-
