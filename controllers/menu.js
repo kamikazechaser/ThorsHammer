@@ -438,7 +438,7 @@ bot.on('callback_query', msg => {
     }
 });
 
-bot.on('inline_query', function(msg) {
+bot.on('inline_query', msg => {
     let langCode = msg.query.slice(5);
     let lang = msg.query.slice(5);
     if (lang == `en`) {
