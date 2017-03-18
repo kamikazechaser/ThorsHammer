@@ -192,7 +192,7 @@ Star and Fork the repository and submit a pull request for whatever change you w
 
 Translations are welcome. Languages given priority are:
 
-- 🇪🇸 Español
+- 🇪🇸 Español - Translated by [@keijodputt](https://github.com/keijodputt)
 - 🇧🇷 Português
 - 🇮🇷 Farsi
 - 🇸🇦 Arabic - Translated by [@rix4r](https://github.com/claydev) - [full arabic fork](https://github.com/claydev/ThorsHammer)

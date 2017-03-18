@@ -12,7 +12,7 @@
         "globaladmininfo":  "*Global Admins Commands*\n\nYou can use either `/, !, or #` as command prefixes\n\nGlobal admins can fully utilize the banhammer, a global admin can only be promoted by the superuser.\n\n• `/banlist`: sends the latest banlist to the log channel.",
         "ingroupinfo": "*In-group Commands*\n\nYou can use either `/, !, or #` as command prefixes\n\n• `/kick [by reply]`: kick a user from the group.\n• `/ban [by reply]`: ban a user from the group.\n• `/admins`: lists the administrators of the group.\n• `/globaladmins`: lists global admins who have the power to use the banhammer.",
         "aboutinfo": "*Information*\n\n_Released Under:_ AGPL-v3.0\n_Written By:_ @kamikazechaser\n_Source Code:_ [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer)",
-        "creditsinfo": "*Translators*\n\n🇪🇸 - {Insert Name Here}\n🇧🇷 - {Insert Name Here}\n🇮🇷 - {Insert Name Here}\n🇸🇦 - @rix4r [claydev]\n🇮🇹 - {Insert Name Here}"
+        "creditsinfo": "*Translators*\n\n🇪🇸 - Keijo D. Putt\n🇧🇷 - {Insert Name Here}\n🇮🇷 - {Insert Name Here}\n🇸🇦 - @rix4r [claydev]\n🇮🇹 - {Insert Name Here}"
     },
     "es": {
         "start": "*Introducción\n\n*ThorsHammer es un bot simple de moderación complementario a _Group Butler/GroupThor_. Cualquiera puede utilizar este bot en su/s grupo/s para realizar tareas simples como:\n1??? Kick y Ban\n* pero lo más importante*,\n2??? Evitar los spammers más notorios, globalmente baneados, negándloe acceso a los grupos.\n\nPara comenzar, agrega el bot a tu/s grupo/s como administrador.\n\nPara más información, usa el comando /help.\n\n*Menú de Ayuda*\n\n?? Pro Tip: Utiliza el Modo Inline\n\nSólo tipea`@thorshammerbot` seguido de un espacio en cualquier chat.",
@@ -27,7 +27,8 @@
         "globaladmininfo":  "*Comandos de Admin global*\n\nPuedes empezar con `/, !, o #` como prefijos\n\nUn Admin global puede usar el bot en toda su extensión, pero sólo puede ser promovido por el Superusuario.\n\n• `/banlist`: envía la lista completa de baneados al canal de registro.",
         "ingroupinfo": "*Comandos en el grupo*\n\nPuedes empezar con `/, !, o #` como prefijos\n\n• `/kick [en respuesta]`: kickea al usuario del grupo, pero puede regresar.\n• `/ban [en respuesta]`: banea al usuario del grupo y no puede volver a entrar.\n• `/admins`: enumera los administradores del grupo.\n• `/globaladmins`: da la lista de administradores globales, que pueden usar el banhammer.",
         "aboutinfo": "*Información*\n\n_Bajo Licencia:_ AGPL-v3.0\n_Creado por By:_ @kamikazechaser\n_Código Fuente:_ [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer)",
-        "creditsinfo": "*Traductoress*\n\n???? - {Insert Name Here}\n???? - {Insert Name Here}\n???? - {Insert Name Here}\n???? - @rix4r [claydev]\n???? - {Keijo D. Putt}"
+        "creditsinfo": "*Traductoress*\n\n🇪🇸 - Keijo D. Putt\n🇧🇷 - {Insert Name Here}\n🇮🇷 - {Insert Name Here}\n🇸🇦 - @rix4r [claydev]\n🇮🇹 - {Insert Name Here}"
+    },
     "pt": {
         "start": "Coming Soon!",
         "banhammer_help": "Coming Soon!",
@@ -71,7 +72,7 @@
         "globaladmininfo":  "مشرفين البوت\nيمكنك استخدام / , # , ! في الاوامر\n\nهذا الامر للمشرفين\n• /banlist: لعرض قائمة المحظورين",
         "ingroupinfo": "اوامر داخل المجموعة\nيمكنك استخدام / , # , ! في الاوامر\n\n• /kick [بالرد] : طرد عضو من المجموعة\n• /ban [بالرد] : حظر عضو من المجموعة\n• /admins : عرض مشرفين المجموعة \n• /globaladmins: المسؤلين عن ادارة البوت والجموعة",
         "aboutinfo": "معلومات\n\nاصدار : AGPL-V3.0\n تم كتابتها من قبل : @kamikazechaser \nالسورس : [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer)",
-        "creditsinfo": "الترجمة\n\n🇪🇸 - الاسبانية\n🇧🇷 -البرازيلية\n🇮🇷 -الهندية\n🇸🇦 - @rix4r [claydev]\n🇮🇹 -الايطالية"
+        "creditsinfo": "الترجمة\n\n🇪🇸 - Keijo D. Putt\n🇧🇷 -البرازيلية\n🇮🇷 -الهندية\n🇸🇦 - @rix4r [claydev]\n🇮🇹 -الايطالية"
     },
     "it": {
         "start": "Coming Soon!",
