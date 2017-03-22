@@ -204,4 +204,3 @@ Edit the respective fields in `core/locale.json` and submit a pull request. be c
 ## License
 
 Released under AGPL-v3.0, see the [LICENSE](https://github.com/kamikazechaser/ThorsHammer/blob/master/LICENSE) file.
-
