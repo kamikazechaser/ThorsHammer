@@ -21,6 +21,9 @@ const helpKeyboard = [[{
 }, {
     text: `🇮🇹 Italiano`,
     callback_data: `help_it`
+}, {
+    text: `🇮🇩 Bahasa Indonesia`,
+    callback_data: `help_id`
 }]]
 
 const inlineKeyboard = [[{
@@ -41,6 +44,9 @@ const inlineKeyboard = [[{
 }, {
     text: `🇮🇹 Italiano`,
     switch_inline_query_current_chat: `help it`
+}, {
+    text: `🇮🇩 Bahasa Indonesia`,
+    switch_inline_query_current_chat: `help id`
 }]]
 
 bot.onText(/^[\/!#]start$/, msg => {
@@ -84,10 +90,13 @@ bot.on('callback_query', msg => {
     }
     if (lang == `ar`) {
         lang = locale.ar
-    }   
+    }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `help_${langCode}`) {
         bot.editMessageText(`${lang.start}`, {
@@ -145,10 +154,13 @@ bot.on('callback_query', msg => {
     }
     if (lang == `ar`) {
         lang = locale.ar
-    }  
+    }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `banhammer_help_${langCode}`) {
         bot.editMessageText(`${lang.banhammerinfo}`, {
@@ -175,7 +187,7 @@ bot.on('callback_query', msg => {
                 }]]
             }
         })
-    }    
+    }
 });
 
 bot.on('callback_query', msg => {
@@ -201,10 +213,13 @@ bot.on('callback_query', msg => {
     }
     if (lang == `ar`) {
         lang = locale.ar
-    }  
+    }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `globaladmin_help_${langCode}`) {
         bot.editMessageText(`${lang.globaladmininfo}`, {
@@ -218,7 +233,7 @@ bot.on('callback_query', msg => {
                 }]]
             }
         })
-    }    
+    }
 });
 
 bot.on('callback_query', msg => {
@@ -244,10 +259,13 @@ bot.on('callback_query', msg => {
     }
     if (lang == `ar`) {
         lang = locale.ar
-    }  
+    }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `ingroup_help_${langCode}`) {
         bot.editMessageText(`${lang.ingroupinfo}`, {
@@ -300,10 +318,13 @@ bot.on('callback_query', msg => {
     }
     if (lang == `ar`) {
         lang = locale.ar
-    }  
+    }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `about_help_${langCode}`) {
         bot.editMessageText(`${lang.aboutinfo}`, {
@@ -317,7 +338,7 @@ bot.on('callback_query', msg => {
                 }]]
             }
         })
-    }   
+    }
 });
 
 bot.on('callback_query', msg => {
@@ -346,7 +367,10 @@ bot.on('callback_query', msg => {
     }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `banhammer_help_${langCode}`) {
         bot.editMessageText(`${lang.banhammerinfo}`, {
@@ -400,10 +424,13 @@ bot.on('callback_query', msg => {
     }
     if (lang == `ar`) {
         lang = locale.ar
-    }   
+    }
     if (lang == `it`) {
         lang = locale.it
-    }       
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     bot.answerCallbackQuery(msg.id, `👍`);
     if (msg.data == `recycle_help_${langCode}`) {
         bot.editMessageText(`*Help Menu*`, {
@@ -464,7 +491,10 @@ bot.on('inline_query', msg => {
     }
     if (lang == `it`) {
         lang = locale.it
-    }     
+    }
+    if (lang == `id`) {
+        lang = locale.id
+    }
     let opts = [];
     if (msg.query == `help ${langCode}`) {
         opts = [
@@ -507,7 +537,7 @@ bot.on('inline_query', msg => {
                 message_text: lang.aboutinfo,
                 parse_mode: `Markdown`,
                 thumb_url: `http://emojipedia-us.s3.amazonaws.com/cache/a3/88/a3881d9895bfa74d5f8c6acea0953c3d.png`
-                
+
             },
             {
                 type: `article`,
@@ -516,7 +546,7 @@ bot.on('inline_query', msg => {
                 message_text: lang.creditsinfo,
                 parse_mode: `Markdown`,
                 thumb_url: `http://emojipedia-us.s3.amazonaws.com/cache/51/5b/515b0cff9d179c6b7fa14d5ee54deebb.png`
-            }      
+            }
 
         ]
     } else {

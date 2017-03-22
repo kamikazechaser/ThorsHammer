@@ -197,6 +197,7 @@ Translations are welcome. Languages given priority are:
 - 🇮🇷 Farsi
 - 🇸🇦 Arabic - Translated by [@rix4r](https://github.com/claydev) - [full arabic fork](https://github.com/claydev/ThorsHammer)
 - 🇮🇹 Italiano
+- 🇮🇩 Bahasa Indonesia - Transalted by [@rizaumami](https://github.com/rizaumami) - [full bahasa indonesia fork](https://github.com/rizaumami/TGramIndoBot)
 
 Edit the respective fields in `core/locale.json` and submit a pull request. be careful of Markdown elements and `\n`, they are important!
 
