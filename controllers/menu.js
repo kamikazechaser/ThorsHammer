@@ -566,4 +566,3 @@ bot.on('inline_query', function(msg) {
     }
     bot.answerInlineQuery(msg.id, opts);
 });
-
