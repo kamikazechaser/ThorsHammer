@@ -88,5 +88,20 @@
         "ingroupinfo": "Coming Soon!",
         "aboutinfo": "Coming Soon!",
         "creditsinfo": "Coming Soon!"
+    },
+    "id": {
+        "start": "*Pengenalan\n\n*ThorsHammer adalah sebuah bot moderasi sederhana yang melengkapi _Group Butler/GroupThor_. Siapapun dapat menggunakan bot ini di dalam grupnya untuk mengerjakan tugas sederhana seperti:\n1️⃣️ _Kick_ dan _Ban_\n*dan yang terpenting*,\n2️⃣️ Mencegah para _spammer_, yang telah di_ban_ secara global, agar tidak masuk ke dalam grup!\n\nUntuk memulai, jadikan bot ini sebagai administrator grup.\n\nUntuk keterangan lebih lanjut, gunakan perintah /help.\n\n*Menu Bantuan*\n\n💡 Saran: Gunakan _Inline Mode_!\n\nDalam grup, ketik `@thorshammerbot` kemudian spasi diikuti perintah.",
+        "banhammer_help": "Banhammer",
+        "superuser_help": "Superuser",
+        "globaladmin_help": "Admin Global",
+        "ingroup_help": "Dalam Grup",
+        "about_help": "Tentang",
+        "credits_help": "Kredit",
+        "banhammerinfo": "*Perintah Banhammer*\n\nAwali perintah dengan `/`, `!`, atau `#`\n\n• `/hammer [menggunakan reply|username|id]`: _ban user_ secara global dari seluruh grup.\n• `/unhammer [menggunakan reply|username|id]`: _unban user_ secara global dari seluruh grup.",
+        "superuserinfo": "*Perintah Superuser*\n\nAwali perintah dengan `/`, `!`, atau `#`\n\n• `/promote [menggunakan reply|username|id]`: angkat _user_ menjadi admin global.\n• `/demote [menggunakan reply|username|id]`: turunkan _user_ dari jabatan admin global.",
+        "globaladmininfo":  "*Perintah Admin Global*\n\nAwali perintah dengan `/`, `!`, atau `#`\n\nAdmin global dapat sepenuhnya menggunakan banhammer, seorang admin global hanya bisa diangkat oleh _superuser_.\n\n• `/banlist`: kirim daftar _ban_ ke kanal _log_ (pencatat).",
+        "ingroupinfo": "*Perintah dalam grup*\n\nAwali perintah dengan `/`, `!`, atau `#`\n\n• `/kick [menggunakan reply]`: keluarkan _user_ dari grup.\n• `/ban [menggunakan reply]`: _ban user_ dari grup.\n• `/admins`: daftar administrator grup.\n• `/globaladmins`: daftar admin global yang dapat menggunakan banhammer.",
+        "aboutinfo": "*Keterangan*\n\n_Lisensi:_ AGPL-v3.0\n_Ditulis oleh:_ @kamikazechaser\n_Kode sumber:_ [ThorsHammer](https://github.com/kamikazechaser/ThorsHammer)",
+        "creditsinfo": "*Penerjemah*\n\n🇪🇸 - {Insert Name Here}\n🇧🇷 - {Insert Name Here}\n🇮🇷 - {Insert Name Here}\n🇸🇦 - {Insert Name Here}\n🇮🇹 - {Insert Name Here}\n🇮🇩 - Sahri Riza Umami"
     }
 }
