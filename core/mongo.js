@@ -11,7 +11,7 @@ mongoose.connect(config.MONGO_URI);
 
 const db = mongoose.connection;
 
-db.on('error', console.error);
+db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
     console.log(rangi.green('Connected To MongoDB'));
 });
